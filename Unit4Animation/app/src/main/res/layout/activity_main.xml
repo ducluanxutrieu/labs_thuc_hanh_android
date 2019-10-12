@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_uit_logo"
+            android:layout_width="@dimen/image_base"
+            android:layout_height="@dimen/image_base"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_uit" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_base_x2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/from_xml"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/from_code"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_fade_in_xml"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fade_in" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_fade_in_code"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fade_in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_fade_out_xml"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fade_out" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_fade_out_code"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fade_out" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_blink_xml"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/blink" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_blink_code"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/blink" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_zoom_in_xml"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zoom_in" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_zoom_in_code"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zoom_in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_zoom_out_xml"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zoom_out" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_zoom_out_code"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zoom_out" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_rotate_xml"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/rotate" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_rotate_code"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/rotate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_move_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/move" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_move_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/move" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_slide_up_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/slide_up" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_slide_up_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/slide_up" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_bounce_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/bounce" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_bounce_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/bounce" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_combine_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/combine" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_combine_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/combine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

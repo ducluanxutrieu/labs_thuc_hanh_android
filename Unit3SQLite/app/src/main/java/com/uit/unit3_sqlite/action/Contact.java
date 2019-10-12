@@ -1,22 +1,22 @@
 package com.uit.unit3_sqlite.action;
 
 public class Contact {
-    private int id;
+    private int _id;
     private String name;
     private String phoneNumber;
 
     public Contact(int id, String name, String phoneNumber) {
-        this.id = id;
+        this._id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
 
     public int getId() {
-        return id;
+        return _id;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this._id = id;
     }
 
     public String getName() {

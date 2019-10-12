@@ -16,36 +16,34 @@ public class DbAdapter {
     private static final int DATABASE_VERSION = 2;
     private final Context context;
 
-    public DbAdapter(Context ctx) {
+    DbAdapter(Context ctx) {
         this.context = ctx;
     }
 
-    public DbAdapter open() {
+    void open() {
         dbHelper = new DatabaseHelper(context, DATABASE_NAME, null, DATABASE_VERSION);
         sqLiteDatabase = dbHelper.getWritableDatabase();
-        return this;
     }
 
     public void close() {
         dbHelper.close();
     }
 
-    public long createUser(String name) {
+    void createUser(String name) {
         ContentValues inititalValues = new ContentValues();
         inititalValues.put(KEY_NAME, name);
-        return sqLiteDatabase.insert(DATABASE_TABLE, null, inititalValues);
+        sqLiteDatabase.insert(DATABASE_TABLE, null, inititalValues);
     }
 
     public boolean deleteUser(long rowId) {
         return sqLiteDatabase.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0;
     }
 
-    public boolean deleteAllUsers() {
-        return sqLiteDatabase.delete(DATABASE_TABLE, null, null) > 0;
+    void deleteAllUsers() {
+        sqLiteDatabase.delete(DATABASE_TABLE, null, null);
     }
 
-    public Cursor getAllUsers() {
+    Cursor getAllUsers() {
         return sqLiteDatabase.query(DATABASE_TABLE, new String[]{KEY_ID, KEY_NAME}, null, null, null, null, null);
     }
-
 }

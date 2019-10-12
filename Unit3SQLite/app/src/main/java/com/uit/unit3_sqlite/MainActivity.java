@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //getToContactManager();
+        getToContactManager();
 
         dbAdapter = new DbAdapter(this);
         dbAdapter.open();
@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(), cursor.getString(cursor.getColumnIndex(DbAdapter.KEY_ID)), Toast.LENGTH_SHORT).show();
             Log.i("Ahihi", cursor.getString(cursor.getColumnIndex(DbAdapter.KEY_ID)));
         }
-
         return users;
     }
 

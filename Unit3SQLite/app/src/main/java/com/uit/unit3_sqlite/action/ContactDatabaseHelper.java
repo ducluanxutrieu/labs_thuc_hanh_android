@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class ContactDatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_CREATE = "create table contacts (id integer primary key autoincrement, name text not null, phone_number text not null);";
+    private static final String DATABASE_CREATE = "create table contacts (_id integer primary key autoincrement, name text not null, phone_number text not null);";
 
     public ContactDatabaseHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

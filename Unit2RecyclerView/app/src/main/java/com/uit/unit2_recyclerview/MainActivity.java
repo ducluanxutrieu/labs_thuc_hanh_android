@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements MainItemClicked{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        gotoGridActivity();
+//        gotoGridActivity();
 
         setupRecyclerView();
         setupView();
