@@ -6,8 +6,13 @@
     <string name="done">Done</string>
     <string name="working">Working...</string>
     <string name="global_value_seen">\n global value seen by all thread</string>
-    <string name="multithread_activity">MultiThread Activity</string>
+    <string name="multi_thread_activity">MultiThread Activity</string>
     <string name="bg_work_is_over">Background work is over!</string>
     <string name="execute">Execute</string>
     <string name="enter_some_data_here">Enter some data here</string>
+    <string name="async_tesk_activity">AsyncTask Activity</string>
+    <string name="slow_job">Slow Job</string>
+    <string name="quick_job">Quick Job</string>
+    <string name="please_wait">Some SLOW job is being done. Please wait…</string>
+    <string name="date_format">dd/MM/yyyy HH:mm:ss</string>
 </resources>

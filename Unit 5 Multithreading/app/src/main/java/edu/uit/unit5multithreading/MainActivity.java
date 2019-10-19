@@ -64,10 +64,20 @@ public class MainActivity extends AppCompatActivity {
         tvMsgReturned = findViewById(R.id.tv_return);
         btnStart = findViewById(R.id.btn_start);
 
+        //go to multiThread activity
         findViewById(R.id.btn_multi_thread_activity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MultiThreadActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //go to async task activity
+        findViewById(R.id.btn_async_task_activity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AsyncTaskActivity.class);
                 startActivity(intent);
             }
         });

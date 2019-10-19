@@ -50,8 +50,15 @@
         android:id="@+id/btn_multi_thread_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/multithread_activity"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        />
+        android:text="@string/multi_thread_activity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_async_task_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="@string/async_tesk_activity" />
 </LinearLayout>
