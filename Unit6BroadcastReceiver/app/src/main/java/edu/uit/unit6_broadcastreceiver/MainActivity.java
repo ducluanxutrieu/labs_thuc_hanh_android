@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
+        //TODO uncomment to use unit 1
 //        if (broadcastReceiver == null) {
 //            initBroadcastReceiver();
 //        }
