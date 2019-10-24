@@ -1,9 +1,9 @@
+package edu.uit.unit6_broadcastreceiver;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
-
-import edu.uit.unit6_broadcastreceiver.R;
 
 public class PowerStateChangeReceiver extends BroadcastReceiver {
     @Override
